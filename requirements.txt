@@ -2,3 +2,5 @@ https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.21.zip
 sewar
 opencv-python
 deep_translator
+aiogram==2.23.1
+flask

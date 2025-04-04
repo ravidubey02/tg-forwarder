@@ -1,3 +1,4 @@
+
 import hashlib
 import re
 import datetime
@@ -17,6 +18,16 @@ from pyrogram.errors.exceptions.not_acceptable_406 import ChannelPrivate
 from forward import user
 from config import Forwarding, Bot
 from logger import logger
+from aiogram import Bot, Dispatcher, executor, types
+import os
+from keep_alive import keep_alive
+keep_alive()
+
+bot = Bot(token=os.environ.get('8095676869:AAG6fPbSL61sf_sE2G7haDiXdIDWAsFQj_Y'))
+dp = Dispatcher(bot)
+
+if __name__ == '__main__':
+    executor.start_polling(dp)
 
 # Config path
 app_dir = Path(__file__).parent
